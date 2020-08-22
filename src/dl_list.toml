@@ -1,0 +1,292 @@
+# aclend
+# depends: attr
+# https://download.savannah.nongnu.org/releases/acl/acl-2.2.53.tar.gz
+
+# attr
+# depends: glibc
+# https://download.savannah.nongnu.org/releases/attr/attr-2.4.48.tar.gz
+
+# autoconf
+# depends: too much shit (awk, m4, diffutils, perl, sh)
+https://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz
+
+# automake
+# depends: perl bash (can it be sh?)
+https://ftp.gnu.org/gnu/automake/automake-1.16.tar.gz
+
+# bash
+# depends: glibc, readline, ncurses, bash-completion(tab-completion)
+# https://ftp.gnu.org/gnu/bash/readline-5.1.tar.gz
+
+# bc
+# depends: busybox
+# included in busybox
+
+# binutils (idk an alternative)
+# depends: libc, zlib, elfutils
+ https://ftp.gnu.org/gnu/binutils/binutils-2.35.tar.gz
+
+# bison (can we just use yacc?)
+# depends: glibc, m4, sh
+https://ftp.gnu.org/gnu/bison/bison-3.7.tar.gz
+
+# busybox
+# depends: idk musl-libc?
+https://www.busybox.net/downloads/busybox-1.32.0.tar.bz2.sig
+
+# bzip2
+# depends: busybox
+# included in busybox
+
+# check
+# depends: awk
+# https://github.com/libcheck/check/releases/download/0.15.1/check-0.15.1.tar.gz
+
+# coreutils
+# depends: busybox
+# included in busybox
+
+# dejagnu
+# depends: sh expect
+# https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.2.tar.gz
+
+# diffutils
+# depends: glibc bash
+https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
+
+# e2fsprogs
+# depends: sh libutil-linux(?)
+https://sourceforge.net/projects/e2fsprogs/files/e2fsprogs/v1.45.6/e2fsprogs-1.45.6.tar.gz/download
+
+# elfutils
+# depends: gcc-libs  zlib  bzip2  xz  libmicrohttpd  sqlite  libarchive  curl  libelf=0.180-1
+https://sourceware.org/elfutils/ftp/elfutils-latest.tar.bz2
+
+# eudev (ew)
+# depends: gobject-introspection  gperf  gtk-doc  intltool  kmod   (tf?)
+https://dev.gentoo.org/~blueness/eudev/eudev-3.2.9.tar.gz
+
+# expat (xml parser)
+# depends: glibc
+https://github.com/libexpat/libexpat/releases/download/R_2_2_9/expat-2.2.9.tar.gz
+
+# expect
+# depends: tcl
+https://sourceforge.net/projects/expect/files/latest/download
+
+# file
+# depends: glibc  zlib  xz  bzip2  libseccomp  libseccomp.so=2-64
+ftp://ftp.astron.com/pub/file/file-5.39.tar.gz
+
+# findutils
+# depends: glibc sh
+# contains find, locate, updatedb, xargs
+# find, xargs included in busybox
+# https://ftp.gnu.org/gnu/findutils/findutils-4.7.0.tar.xz
+
+# flex
+# depends: glibc m4 sh
+https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
+
+# gawk (ew)
+# depends: sh glibc mpfr
+https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.gz
+
+# gcc (necessary for linux, download musl-gcc?)
+# depends: gcc-libs=10.1.0-2  binutils>=2.28  libmpc
+https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz
+
+# gdbm (necessary for man-db)
+https://ftp.gnu.org/gnu/gdbm/gdbm-latest.tar.gz
+
+# gettext (internationalization/localization, is it necessary?)
+https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.gz
+
+# glibc (replace with musl)
+
+# gmp (math lib, necessary for gcc)
+https://ftp.gnu.org/gnu/gmp/gmp-6.2.0.tar.xz
+
+# gperf (generate perfect hash func, necessary for eudev)
+https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz
+
+# grep (available in busybox)
+
+# groff (idk an alternative)
+https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
+
+# GRUB
+https://ftp.gnu.org/gnu/grub/grub-2.04.tar.gz
+
+# gzip (available in busybox)
+
+# iana-etc (networking)
+http://anduin.linuxfromscratch.org/LFS/iana-etc-2.30.tar.bz2
+
+# ineutils (network administration utils)
+https://ftp.gnu.org/gnu/inetutils/inetutils-1.9.tar.gz
+
+# intltool (extract strings from source files)
+# idt this is necessary
+
+# iproute2 (ipv4 ipv6 networking tools)
+https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.7.0.tar.gz
+
+# kbd (key-table files, non-US keyboard, console fonts)
+https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.3.0.tar.gz
+
+# kmod (kernel module utilities)
+https://mirrors.edge.kernel.org/pub/linux/utils/kernel/kmod/kmod-27.tar.gz
+
+# less (available in busybox)
+
+# lfs bootscripts
+http://linuxfromscratch.org/lfs/downloads/9.1/lfs-bootscripts-20191031.tar.xz
+
+# libcap (idk what this is, POSIX 1003.1e capability in linux)
+https://mirrors.edge.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.42.tar.gz
+
+# libelf (necessary to build linux?, book is missing it, is it from elfutils?)
+
+# libffi (idk, "high-level prog interface for calling convention")
+https://sourceware.org/pub/libffi/libffi-3.3.tar.gz
+
+# libpipeline (required by man-db)
+https://quantum-mirror.hu/mirrors/pub/gnusavannah/libpipeline/libpipeline-1.5.2.tar.gz
+
+# libressl (replacement for openssl?)
+https://github.com/libressl-portable/portable/archive/v3.1.3.tar.gz
+`
+# libtool (for shared libraries, needed by LFs test suites, omit?)
+# https://ftp.gnu.org/gnu/libtool/libtool-2.4.tar.gz
+
+# linux
+# https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.5.3.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.7.12.tar.gz
+
+# m4 (is there a non-gnu version)
+https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz
+
+# make (GNU version might be necessary)
+https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
+
+# man-db (provides man)
+https://quantum-mirror.hu/mirrors/pub/gnusavannah/man-db/man-db-2.9.3.tar.xz
+
+# man-pages (actual contents)
+https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/man-pages-5.07.tar.gz
+
+# meson (build system, ew)
+https://github.com/mesonbuild/meson/releases/download/0.55.0/meson-0.55.0.tar.gz
+
+# mpc (complex num arithmetic, needed by gcc)
+https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
+
+# mpfr (multiple precision arithmetic, needed by gcc)
+https://ftp.gnu.org/gnu/mpfr/mpfr-4.1.0.tar.gz
+
+# musl (substitute for glibc)
+http://musl.libc.org/releases/musl-1.2.1.tar.gz
+
+# ninja (small build system, maybe necessary, needs python?)
+https://github.com/ninja-build/ninja/archive/v1.10.0.tar.gz
+
+# ncurses
+https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz
+
+# openssl (replace with libressl?)
+https://www.openssl.org/source/openssl-1.1.1g.tar.gz
+
+# patch (included in busybox)
+
+# perl (needed for installs ew)
+https://www.cpan.org/src/5.0/perl-5.32.0.tar.gz
+
+# pkg-config (replace with pkgconf)
+#http://pkgconfig.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+
+# pkgconf
+https://github.com/pkgconf/pkgconf/archive/pkgconf-1.7.3.tar.gz
+
+# procps-ng (process monitoring utility, needed by lfs bootscripts)
+https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.15.tar.xz/download
+
+# psmisc (display ps info for sysadmin)
+https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.2.tar.xz/download
+
+# python 3 (necessary for many packages)
+https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tar.xz
+
+# python 3 doc
+https://www.python.org/ftp/python/doc/3.8.5/python-3.8.5-docs-html.tar.bz2
+
+# readline (used by bash)
+https://ftp.gnu.org/gnu/readline/readline-7.0.tar.gz
+
+# sed (included in busybox)
+
+# shadow (pswd utility) 
+https://github.com/shadow-maint/shadow/releases/download/4.8.1/shadow-4.8.1.tar.gz
+
+# sysklogd (log system messages, is this used by sysvinit?)
+https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
+
+# sysvinit
+https://download.savannah.nongnu.org/releases/sysvinit/sysvinit-2.97.tar.xz
+
+# tar (provided by busybox)
+
+# tcl 
+https://sourceforge.net/projects/tcl/files/Tcl/8.6.10/tcl8.6.10-src.tar.gz/download
+
+# texinfo (fuck is this necessary)
+# https://ftp.gnu.org/gnu/texinfo/texinfo-6.7.tar.gz
+
+# time zone data
+https://data.iana.org/time-zones/releases/tzcode2019c.tar.gz
+
+# udev-lfs tarball (wat dis?)
+http://anduin.linuxfromscratch.org/LFS/udev-lfs-20171102.tar.xz
+
+# util-linux (various utility programs)
+https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.36/util-linux-2.36.tar.gz
+
+# vim
+https://github.com/vim/vim/archive/v8.2.1360.tar.gz
+
+# xml::parser (perl module that interfaces expat)
+https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
+
+# xz utils (included in busybox?)
+https://tukaani.org/xz/xz-5.2.5.tar.gz
+
+# zlib
+https://zlib.net/zlib-1.2.11.tar.gz
+
+# zstd
+https://github.com/facebook/zstd/releases/download/v1.4.5/zstd-1.4.5.tar.gz
+
+
+# plan 9 from userspace (for shits and giggles)
+https://github.com/9fans/plan9port/archive/master.zip
+
+
+### PATCHES ###
+
+# bash upstream fixes patch (wut)
+#http://linuxfromscratch.org/patches/lfs/9.1/bash-5.0-upstream_fixes-1.patch
+
+# bzip2 documentation patch
+http://linuxfromscratch.org/patches/lfs/9.1/bzip2-1.0.8-install_docs-1.patch
+
+# coreutils internationalization fixes patch (prob not necessary)
+#http://linuxfromscratch.org/patches/lfs/9.1/coreutils-8.31-i18n-1.patch
+
+# glibc fhs patch (also prob not necessary)
+#http://linuxfromscratch.org/patches/lfs/9.1/glibc-2.31-fhs-1.patch
+
+# kbd backspace/delete patch
+http://linuxfromscratch.org/patches/lfs/9.1/kbd-2.2.0-backspace-1.patch
+
+# sysvinit consolidated patch
+http://linuxfromscratch.org/patches/lfs/9.1/sysvinit-2.96-consolidated-1.patch
